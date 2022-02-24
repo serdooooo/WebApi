@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<div class="wrapper">
+    <form class="form-signin" action="/User/Login" method="post">
+        @Html.AntiForgeryToken()
+        <h2 class="form-signin-heading" style="color: #4CAF50">Please login</h2>
+        <input type="email" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
+        <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+        <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        </label>
+        <button class="btn btn-lg btn-success btn-block" type="submit" style="">Login</button>
+    </form>
+    
+</div>
+<style>
+    button {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+        button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    * {
+        background-color: #04AA6D;
+    }
+    .wrapper {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .form-signin {
+        max-width: 380px;
+        padding: 15px 35px 45px;
+        margin: 0 auto;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 30px;
+            background-color: transparent;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color:transparent;
+        }
+
+            .form-signin .form-control:focus {
+                z-index: 2;
+            }
+
+        .form-signin input[type=text] {
+            margin-bottom: -1px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .form-signin input[type=password] {
+            margin-bottom: 20px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+</style>

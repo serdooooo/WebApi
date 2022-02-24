@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <title>MY PROJECT | Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="art.css" />
+    <link rel="icon" type="image/x-icon" href="pictures/ribbon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div>
+        <header><h1>MY FIRST WE API PROJECT</h1></header>
+        <nav>
+            <a href="/Home/Index">Home</a>
+            <a href="/Home/List">UserList</a>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <main>
+            <div id="homePagebox">
+                <div id="web">
+                    <div id="socialMedia">
+                        <ol>
+                            <a href="https://www.instagram.com/sserdarkarakurt/"><li id="insta"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></li></a>
+                            <br>
+                            <a href="https://linkedin.com/"><li id="linkedin"><i style="font-size:54px" class="fa">&#xf0e1;</i></li></a>
+                            <br>
+                            <a href="https://www.youtube.com"><li id="youtube"><i class="fa fa-youtube" style="font-size:48px;color:red"></i></li></a>
+                        </ol>
+                    </div>
+                    <img src="https://cdn.lynda.com/course/786434/786434-636807413036072934-16x9.jpg" style="height:500px; width:1000px" alt="web"></a>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>	
+  <style>
+      body {
+          background-image: url(https://i.imgur.com/KV7rJR8.png);
+          font-family: Arial, Verdana, Sans-serif;
+      }
+
+      h1 {
+          text-align: center;
+          font-family: "Lucida Console", Monospace;
+      }
+
+      nav, nav a {
+          text-align: center;
+          font-size: 1.03em;
+          color: black;
+          text-decoration: none;
+          word-spacing: 50px;
+          font-weight: bold;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      nav a:hover {
+          color: #779ECB;
+      }
+
+      #socialMedia {
+          width: 0;
+          height: auto;
+          background-color: transparent;
+          float: right;
+      }
+
+          #socialMedia ol li {
+              list-style-type: none;
+          }
+
+      #insta {
+          width: 48px;
+          height: 47px;
+      }
+
+      #linkedin {
+          width: 51px;
+          height: 50px;
+      }
+
+      #youtube {
+          width: 51px;
+          height: 50px;
+      }
+
+      #homePagebox {
+          margin-left: auto;
+          margin-right: auto;
+          width: 1000px;
+          height: 500px;
+          background-color: white;
+          box-shadow: 0 2px 2px 2px #888888;
+      }
+
+      #web {
+          text-align: center;
+      }
+
+          #anthony img {
+              margin-top: 80px;
+          }
+
+      .wrapper {
+          margin: auto;
+          width: 80%;
+      }
+
+  </style>
